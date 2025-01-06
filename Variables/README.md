@@ -1,9 +1,11 @@
 # Chapter 2 : Variables
 
 ## What are Variables?
+
 Variable is a symbolic name associated with a value and is used to store data in a program.
 
 ### Key Characteristics of Variables:
+
 - **Storage**: Variables act as storage locations for data values.
 
 - **Naming**: Each variable has a name (identifier) that you use to access its value. Variable names must follow certain rules:
@@ -18,4 +20,15 @@ Variable is a symbolic name associated with a value and is used to store data in
   - Booleans: True or False values (e.g., True, False)
 
 - **Dynamic Typing**: In languages like Python, you do not need to declare the type of a variable explicitly. The interpreter determines the type based on the value assigned.
+
+## Comments:
+
+Comments in Python are used to explain code, making it easier to understand for yourself and others. They are ignored by the Python interpreter, meaning they do not affect the execution of the program. Here’s a detailed overview of how to use comments in Python:
+- **Types of Comments in Python**:
+1. Single-Line Comments: Single-line comments start with a hash mark (#).
+2. Multi-Line Comments: You can use multiple single-line comments or triple quotes (""" or ''') to create a comment that spans multiple lines.
+
+## Python Data Types in main.py
+
+This document describes various data types used in the `main.py` file, along with the comments added in the code.
 
