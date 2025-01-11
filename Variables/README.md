@@ -42,3 +42,11 @@ Formatted string literals (also called f-strings for short) let you include the 
 - **Calling Functions**: You can call functions within the braces.
 - **Formatting Options**: You can use format specifications for numbers and dates.
 - **Multiline f-strings**: You can also use f-strings over multiple lines.
+
+## F-Strings in f_string.py
+
+- Opening quotes must be preceded by an f.
+- Variables within curly brackets have their values "interpolated" (injected) into the string.
+- It's just a string with a special syntax.
+
+
