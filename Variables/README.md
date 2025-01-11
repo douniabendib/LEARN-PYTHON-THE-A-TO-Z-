@@ -32,3 +32,13 @@ Comments in Python are used to explain code, making it easier to understand for 
 
 This document describes various data types used in the `main.py` file, along with the comments added in the code.
 
+## What is Formatted String Literals?
+
+Formatted string literals (also called f-strings for short) let you include the value of Python expressions inside a string by prefixing the string with f or F and writing expressions as {expression}.
+
+### Key Features of f-strings:
+
+- **Expression Support**: You can include any valid Python expression inside the braces.
+- **Calling Functions**: You can call functions within the braces.
+- **Formatting Options**: You can use format specifications for numbers and dates.
+- **Multiline f-strings**: You can also use f-strings over multiple lines.
