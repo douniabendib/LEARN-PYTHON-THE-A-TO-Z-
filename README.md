@@ -13,3 +13,6 @@ In this chapter, we will learn about:
 - What variables are and how to use them
 - Different data types (integers, floats, strings, booleans)
 - Naming conventions and best practices for variables
+- What Comments are and types of Comments in Python
+- F-Strings in Python
+- What is clean code
