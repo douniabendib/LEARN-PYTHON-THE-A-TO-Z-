@@ -49,4 +49,44 @@ Formatted string literals (also called f-strings for short) let you include the 
 - Variables within curly brackets have their values "interpolated" (injected) into the string.
 - It's just a string with a special syntax.
 
+## What is clean code?
 
+Clean code refers to programming practices that prioritize readability, simplicity, and maintainability. It emphasizes writing code that is easy to understand and modify, making it more accessible for both the original author and other developers who may work on it later.
+
+### Key Principles of Clean Code
+
+1. **Readability**:
+   - Code should be easy to read and understand. Use meaningful variable and function names that convey purpose.
+
+2. **Simplicity**:
+   - Keep code as simple as possible. Avoid unnecessary complexity and strive for straightforward solutions.
+
+3. **Consistency**:
+   - Maintain a consistent style throughout the codebase. This includes naming conventions, formatting, and organization.
+
+4. **Modularity**:
+   - Break code into small, manageable functions or classes. Each function should perform a single task, making it easier to test and maintain.
+
+5. **Commenting and Documentation**:
+   - Use comments to explain why certain decisions were made, not just what the code does. Good documentation helps others (and yourself) understand the code later.
+
+6. **Avoiding Code Duplication**:
+   - Follow the DRY (Don't Repeat Yourself) principle. Repeated code can lead to errors and makes maintenance harder.
+
+7. **Error Handling**:
+   - Implement proper error handling to anticipate and manage potential issues gracefully.
+
+8. **Testing**:
+   - Write automated tests to ensure code behaves as expected and to facilitate future changes without introducing bugs.
+
+### Characteristics of Clean Code
+
+- **Descriptive Names**: Use names that clearly describe the purpose of variables, functions, and classes.
+  
+- **Short Functions**: Functions should be short and focused. If a function is too long, consider breaking it into smaller ones.
+
+- **Single Responsibility Principle**: Each function or module should have one responsibility or purpose.
+
+- **Avoiding Global Variables**: Minimize the use of global variables to reduce dependencies and potential side effects.
+
+- **Refactoring**: Regularly revisit and improve the codebase to enhance clarity and efficiency.
