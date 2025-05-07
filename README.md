@@ -16,3 +16,19 @@ In this chapter, we will learn about:
 - What Comments are and types of Comments in Python
 - F-Strings in Python
 - What is clean code
+
+## Chapter 3 : Functions
+- What function is 
+- Multiple Parameters
+- Difference between Printing vs. Returning
+- Where to Declare Functions
+- Order of Functions
+- None Return
+- Multiple Return Values
+- Parameters vs. Arguments
+- Default Values
+
+## Chapter 4 : Scope
+- Scope
+- Global Scope
+- Local Scope
