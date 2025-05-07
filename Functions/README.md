@@ -64,4 +64,17 @@ intro = create_introduction(my_name, my_age, "1.8", "80")
 print(intro) 
 """Your name is John and you are 30 years old. You are 1.8 meters tall and weigh 80 kilograms."""
 
+# Printing vs. Returning
+
+Some new developers get hung up on the difference between print() and return.
+
+It can be particularly confusing when the test suite we provide simply prints the output of your functions to the console. It makes it seem like print() and return are interchangeable, but they are not!
+
+* print() is a function that:
+	- Prints a value to the console.
+	- Does not return a value.
+* return is a keyword that:
+	- Ends the current function's execution.
+	- Provides a value (or values) back to the caller of the function.
+	- Does not print anything to the console (unless the return value is later print()ed).
 
