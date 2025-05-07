@@ -57,13 +57,14 @@ def create_introduction(name, age, height, weight):
     return full_intro
 ```
 It can be called like this:
-
+```python
 my_name = "John"
 my_age = "30"
 
 intro = create_introduction(my_name, my_age, "1.8", "80")
 print(intro) 
-"""Your name is John and you are 30 years old. You are 1.8 meters tall and weigh 80 kilograms."""
+```
+Your name is John and you are 30 years old. You are 1.8 meters tall and weigh 80 kilograms.
 
 # Printing vs. Returning
 
@@ -85,4 +86,45 @@ All functions must be defined before they're used.
 
 You might think this would make structuring Python code hard because the order of the functions needs to be just right. As it turns out, there's a simple trick that makes it super easy.
 
-Most Python developers solve this problem by defining all the functions in their program first, then they call an "entry point" function last. That way all of the functionshave been read by the Python interpreter before the first one is called.
+Most Python developers solve this problem by defining all the functions in their program first, then they call an "entry point" function last. That way all of the functions have been read by the Python interpreter before the first one is called.
+
+#  Explanation of the fahrenheit_to_celsius.py
+
+This repository contains a Python script that converts temperatures from Fahrenheit to Celsius. It provides a simple interface for testing the conversion with various Fahrenheit values.
+
+## Overview
+
+The script includes two main functions:
+
+1. **`to_celsius(f)`**: Converts a given temperature from Fahrenheit to Celsius.
+2. **`test(f)`**: Tests the conversion function and prints the results in a user-friendly format.
+
+## Functions
+
+### `to_celsius(f)`
+
+- **Description**: This function takes a temperature in Fahrenheit and converts it to Celsius using the formula:
+
+  \[
+  C = \frac{5}{9} \times (F - 32)
+  \]
+
+- **Parameters**:
+  - `f` (float): The temperature in Fahrenheit.
+
+- **Returns**:
+  - (float): The converted temperature in Celsius.
+
+### `test(f)`
+
+- **Description**: This function calls `to_celsius(f)` to convert the given Fahrenheit temperature and prints the result to the console.
+
+- **Parameters**:
+  - `f` (float): The temperature in Fahrenheit to test.
+
+## Usage
+
+To use the script, you can call the `test` function with any Fahrenheit value you want to convert. For example:
+
+```python
+test(100)  # Converts 100 degrees Fahrenheit to Celsius
