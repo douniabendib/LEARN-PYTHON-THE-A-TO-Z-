@@ -90,7 +90,7 @@ Most Python developers solve this problem by defining all the functions in their
 
 #  Explanation of the fahrenheit_to_celsius.py
 
-This repository contains a Python script that converts temperatures from Fahrenheit to Celsius. It provides a simple interface for testing the conversion with various Fahrenheit values.
+This script converts temperatures from Fahrenheit to Celsius. It provides a simple interface for testing the conversion with various Fahrenheit values.
 
 ## Overview
 
@@ -128,3 +128,46 @@ To use the script, you can call the `test` function with any Fahrenheit value yo
 
 ```python
 test(100)  # Converts 100 degrees Fahrenheit to Celsius
+```
+
+# Explanation of the hours_to_secs.py
+
+This script converts hours into seconds. It includes a function to perform the conversion and a test function to display the results.
+
+## Overview
+
+The script consists of two main functions:
+
+1. **`hours_to_seconds(hours)`**: Converts a given number of hours into seconds.
+2. **`test(hours)`**: Tests the conversion function and prints the result.
+
+## Functions
+
+### `hours_to_seconds(hours)`
+
+- **Description**: This function takes a number of hours and converts it to seconds using the formula:
+  
+  \[
+  \text{seconds} = \text{hours} \times 3600
+  \]
+
+- **Parameters**:
+  - `hours` (float): The number of hours to convert.
+
+- **Returns**:
+  - (float): The equivalent number of seconds.
+
+### `test(hours)`
+
+- **Description**: This function calls `hours_to_seconds(hours)` to convert the given hours and prints the result.
+
+- **Parameters**:
+  - `hours` (float): The number of hours to test.
+
+## Usage
+
+To use the script, simply call the `test` function with the desired number of hours. For example:
+
+```python
+test(10)  # Converts 10 hours to seconds
+```
