@@ -49,12 +49,12 @@ The `area_of_circle` function calculates the area of a circle given its radius. 
 Functions can have multiple parameters ("parameter" being a fancy word for "input").The name of a parameter doesn't matter when it comes to which values will be assigned towhich parameter. It's position that matters. The first parameter will become the first value that's passed in, the second parameter is the second value that's passed in, and so on.
 Here's an example with four parameters:
 
-def create_introduction(name, age, height, weight):
+```def create_introduction(name, age, height, weight):
     first_part = "Your name is " + name + " and you are " + age + " years old."
     second_part = "You are " + height + " meters tall and weigh " + weight + " kilograms."
     full_intro = first_part + " " + second_part
     return full_intro
-
+```
 It can be called like this:
 
 my_name = "John"
