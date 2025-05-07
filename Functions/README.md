@@ -49,7 +49,8 @@ The `area_of_circle` function calculates the area of a circle given its radius. 
 Functions can have multiple parameters ("parameter" being a fancy word for "input").The name of a parameter doesn't matter when it comes to which values will be assigned towhich parameter. It's position that matters. The first parameter will become the first value that's passed in, the second parameter is the second value that's passed in, and so on.
 Here's an example with four parameters:
 
-```def create_introduction(name, age, height, weight):
+```python
+def create_introduction(name, age, height, weight):
     first_part = "Your name is " + name + " and you are " + age + " years old."
     second_part = "You are " + height + " meters tall and weigh " + weight + " kilograms."
     full_intro = first_part + " " + second_part
@@ -78,3 +79,10 @@ It can be particularly confusing when the test suite we provide simply prints th
 	- Provides a value (or values) back to the caller of the function.
 	- Does not print anything to the console (unless the return value is later print()ed).
 
+# Order of Functions
+
+All functions must be defined before they're used.
+
+You might think this would make structuring Python code hard because the order of the functions needs to be just right. As it turns out, there's a simple trick that makes it super easy.
+
+Most Python developers solve this problem by defining all the functions in their program first, then they call an "entry point" function last. That way all of the functionshave been read by the Python interpreter before the first one is called.
