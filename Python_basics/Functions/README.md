@@ -80,6 +80,23 @@ It can be particularly confusing when the test suite we provide simply prints th
 	- Provides a value (or values) back to the caller of the function.
 	- Does not print anything to the console (unless the return value is later print()ed).
 
+# Where to Declare Functions
+
+You've probably noticed that a variable needs to be declared before it's used. For example, the following doesn't work:
+```python
+print(my_name)
+my_name = 'Lane Wagner'
+# NameError: 'my_name' is not defined
+```
+It needs to be:
+
+```python
+my_name = 'Lane Wagner'
+print(my_name)
+# Lane Wagner
+```
+Code executes in order from top to bottom, so a variable needs to be created before it can be used. That means that if you define a function, you can't call that function until after it has been defined.
+
 # Order of Functions
 
 All functions must be defined before they're used.
