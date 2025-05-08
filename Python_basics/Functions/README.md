@@ -63,8 +63,9 @@ my_age = "30"
 
 intro = create_introduction(my_name, my_age, "1.8", "80")
 print(intro) 
-```
+
 Your name is John and you are 30 years old. You are 1.8 meters tall and weigh 80 kilograms.
+```
 
 # Printing vs. Returning
 
@@ -241,3 +242,21 @@ def add(a, b):
 # 5 and 6 are arguments
 sum = add(5, 6)
 ```
+
+# Default Values
+
+In Python you can specify a default value for a function argument. It's nice for when a function has arguments that are "optional". You as the function definer can specify a specific default value in case the caller doesn't provide one.
+
+A default value is created by using the assignment (=) operator in the function signature.
+```python
+def get_greeting(email, name="there"):
+    print("Hello", name, "welcome! You've registered your email:", email)
+
+
+get_greeting("lane@example.com", "Lane")
+# Hello Lane welcome! You've registered your email: lane@example.com
+
+get_greeting("lane@example.com")
+# Hello there welcome! You've registered your email: lane@example.com
+```
+f the second parameter is omitted, the default "there" value will be used in its place. As you may have guessed, for this structure to work, optional arguments (the ones with defaults) must come after all required arguments.
