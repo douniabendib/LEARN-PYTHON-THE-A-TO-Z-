@@ -259,4 +259,5 @@ get_greeting("lane@example.com", "Lane")
 get_greeting("lane@example.com")
 # Hello there welcome! You've registered your email: lane@example.com
 ```
-f the second parameter is omitted, the default "there" value will be used in its place. As you may have guessed, for this structure to work, optional arguments (the ones with defaults) must come after all required arguments.
+if the second parameter is omitted, the default "there" value will be used in its place. As you may have guessed, for this structure to work, optional arguments (the ones with defaults) must come after all required arguments.
+
