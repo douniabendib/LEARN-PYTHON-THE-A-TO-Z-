@@ -91,4 +91,18 @@ star_rating = 4
 star_rating /= 2
 # star_rating is now 2.0
 ```
+# Scientific Notation
+As we covered earlier, a float is a positive or negative number with a fractional part.
+
+You can add the letter e or E followed by a positive or negative integer to specify that you're using scientific notation.
+```python
+print(16e3)
+# Prints 16000.0
+
+print(7.1e-2)
+# Prints 0.071
+```
+If you're not familiar with scientific notation, it's a way of expressing numbers that are too large or too small to conveniently write normally.
+
+In a nutshell, the number following the e specifies how many places to move the decimal to the right for a positive number, or to the left for a negative number.
 
