@@ -46,4 +46,11 @@ Floor division is like normal division except the result is floored afterward, w
 -7 // 3
 # -3 (an integer, rounded down from -2.333)
 ```
-
+# Exponents
+Python has built-in support for exponents - something most languages require a math library for.
+```python
+# reads as "three squared" or
+# "three raised to the second power"
+3 ** 2
+# 9
+```
