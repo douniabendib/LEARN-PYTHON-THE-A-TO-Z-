@@ -106,3 +106,15 @@ If you're not familiar with scientific notation, it's a way of expressing number
 
 In a nutshell, the number following the e specifies how many places to move the decimal to the right for a positive number, or to the left for a negative number.
 
+# Underscores for Readability
+Python also allows you to represent large numbers in the decimal format using underscores as the delimiter instead of commas to make it easier to read.
+```python
+num = 16_000
+print(num)
+# Prints 16000
+
+num = 16_000_000
+print(num)
+# Prints 16000000
+```
+
