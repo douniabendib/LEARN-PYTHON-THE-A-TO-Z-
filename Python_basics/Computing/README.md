@@ -142,3 +142,17 @@ print(True and True)
 print(True or False)
 # prints True
 ```
+# Nesting With Parentheses
+We can nest logical expressions using parentheses.
+```python
+print((True or False) and False)
+```
+First, we evaluate the expression in the parentheses, (True or False). It evaluates to True:
+```python
+print(True and False)
+```
+True and False evaluates to False:
+```python
+print(False)
+```
+So, print((True or False) and False) prints "False" to the console.
