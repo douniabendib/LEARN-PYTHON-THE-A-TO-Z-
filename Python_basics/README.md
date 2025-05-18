@@ -32,3 +32,25 @@ In this chapter, we will learn about:
 - Scope
 - Global Scope
 - Local Scope
+
+## Chapter 5: Testing and Debugging
+- Unit Tests
+- Assertions
+- Unexpected
+- assertRaises()
+
+## Chapter 6: Computing
+- Python Numbers
+- Numbers Review
+- Floor Division
+- Exponents
+- Changing in Place
+- Arithmetic shortcuts
+- Scientific Notation
+- Underscores for Readability
+- Logical Operators
+- Nesting With Parentheses
+- Not
+- Binary Numbers
+- Bitwise “&” Operator
+- Bitwise “|” Operator
