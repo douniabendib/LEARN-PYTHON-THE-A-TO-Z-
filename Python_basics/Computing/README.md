@@ -69,3 +69,26 @@ Don't let the fact that the expression player_score = player_score - 1 is not a 
 Assign to player_score the current value of player_score minus 1
 
 In this operation, the right-hand side (player_score - 1) is calculated first. Once we have the result, we update player_score with this new value.
+
+# Plus Equals
+Python makes reassignment easy when doing math. In JavaScript or Go, you might be familiar with the ++ syntax for incrementing a number variable by 1. In Python, we use the += in-place operator instead.
+```python
+star_rating = 4
+star_rating += 1
+# star_rating is now 5
+```
+* Other Operators
+```python
+star_rating = 4
+star_rating -= 1
+# star_rating is now 3
+
+star_rating = 4
+star_rating *= 2
+# star_rating is now 8
+
+star_rating = 4
+star_rating /= 2
+# star_rating is now 2.0
+```
+
