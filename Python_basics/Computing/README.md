@@ -24,3 +24,14 @@ Arithmetic can be performed as you might expect:
 3 / 2
 # 1.5 (a float)
 ```
+# Numbers Review
+* Integers
+In Python, numbers without a decimal point are called Integers.
+
+Integers are simply whole numbers, positive or negative. For example, 3 and -3 are both examples of integers.
+* Floats
+A float is, as you may have guessed, the number type that allows for decimal values.
+```python
+my_int = 5
+my_float = 5.5
+```
