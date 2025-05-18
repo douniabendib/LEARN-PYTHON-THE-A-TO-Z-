@@ -15,7 +15,7 @@ To use the unittest framework in a new Python file, we must first import it:
 import unittest
 ```
 # Assertions 
-* - TestCase Class:
+* TestCase Class:
 
 Python's unittest framework uses a special TestCase class to organize and execute individual test methods. Each test method represents a specific scenario or behavior (or unit) that we want to test in our code.
 
@@ -45,7 +45,8 @@ During initialization:
 unittest prepares the test environment for the upcoming test method.
 Any attributes defined within the TestCase class are initialized.
 
-* - Assert Methods:
+* Assert Methods
+
 Any TestCase instance comes with some helpful methods for testing:
 
 1. - self.assertEqual(): Checks if two values are equal.
@@ -76,3 +77,25 @@ if __name__ == '__main__':
 - MyTestCase inherits from the TestCase class and has two test methods (test_addition and test_string_length).
 - Each test method uses assertion methods (self.assertEqual()) to check specific conditions and ensure that our code behaves correctly.
 - The if-statement at the bottom checks if the test file is being run. If so,unittest uses the .main() method and executes the test methods within MyTestCase.
+
+# Unexpected
+
+We'll define test methods within a test class that represents a specific scenario or behavior to validate, as we have been doing with assertions.
+```python
+def test_word_in_text(self):
+  text = 'Hello, World!' 
+  self.assertIn('World', text)
+```
+In the code above, we are testing if 'World' is part of the text. But what happens if the text variable is an empty string? Or what if it's not a string at all?
+
+As you write more unit tests, you may start to anticipate edge cases such as these.
+# .assertRaises()
+The .assertRaises() method is great for ensuring that if an edge case exists, the proper error is raised.
+
+For example, in testing a function that should only accept string inputs, you can use .assertRaises() to verify that passing a non-string value raises a TypeError:
+```python
+# Passing a non-string will raise a TypeError
+with self.assertRaises(TypeError):
+  self.assertIn('World', 123)
+```
+The .assertRaises() method works as a code block started by the with keyword. Inside the block, we can write tests that might raise an error, such as a TypeError. In this example, the code trying to check if the string 'World' is inside 123. Since 123 is a number, not a string, Python will raise a TypeError.
