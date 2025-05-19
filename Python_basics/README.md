@@ -54,3 +54,13 @@ In this chapter, we will learn about:
 - Binary Numbers
 - Bitwise “&” Operator
 - Bitwise “|” Operator
+
+## Chapter 7: Comparisons
+- Comparison Operators
+- Comparison Operator Evaluations
+- Comparison Practice
+- If Statements
+- If Statements Practice
+- If-Else
+- If-Else Practice
+
