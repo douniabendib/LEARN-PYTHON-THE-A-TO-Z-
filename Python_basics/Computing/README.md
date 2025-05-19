@@ -166,4 +166,66 @@ print(not True)
 print(not False)
 # Prints: True
 ```
+# Binary Numbers
+Binary numbers are just "base 2" numbers. They work the same way as "normal" base 10 numbers, but with two symbols instead of ten.
+
+Base-2 (binary) symbols: 0 and 1
+Base-10 (decimal) symbols: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+* Binary in Python
+You can write an integer in Python using binary syntax using the 0b prefix:
+```python
+print(0b0001)
+# Prints 1
+
+print(0b0101)
+# Prints 5
+```
+# Bitwise “&” Operator
+
+Bitwise operators are similar to logical operators, but instead of operating on boolean values, they apply the same logic to all the bits in a value by column. For example, say you had the numbers 5 and 7 represented in binary. You could perform a bitwise AND operation and the result would be 5.
+
+- 0101 is 5
+- 0111 is 7
+```python
+0101
+&
+0111
+=
+0101
+```
+A 1 in binary is the same as True, while 0 is False. So really a bitwise operation is just a bunch of logical operations that are completed in tandem by column.
+```python
+0 & 0 = 0
+
+1 & 1 = 1
+
+1 & 0 = 0
+```
+Ampersand & is the bitwise AND operator in Python. "AND" is the name of the bitwise operation, while ampersand & is the symbol for that operation. For example, 5 & 7 = 5, while 5 & 2 = 0.
+
+- 0101 is 5
+- 0010 is 2
+```python
+0101
+&
+0010
+=
+0000
+```
+# Binary Notation
+
+When writing a number in binary, the prefix 0b is used to indicate that what follows is a binary number. 0b10 is two in binary, but 10 without the 0b prefix is simply ten.
+- 0b0101 is 5
+- 0b0111 is 7
+
+* Putting It Together
+```python
+0b0101 & 0b0111
+# equals 5
+
+binary_five = 0b0101
+binary_seven = 0b0111
+binary_five & binary_seven
+# equals 5
+```
 
