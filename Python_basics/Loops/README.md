@@ -61,4 +61,43 @@ for i in range(3, 0, -1):
 # 2
 # 1
 ```
+# While Loop
+A while loop is different from the for loop. A for loop allows us to iterate over a specific range, whereas a while loop allows us to keep iterating as long as a certain condition is met.
+
+To use a while loop write:
+```python
+while condition:
+    code
+```
+The code will execute only if the condition is True.
+
+There are many use cases where a while would solve the problem, but the for loop would not.
+
+For example consider this problem:
+
+Find the smallest power of 2 that is greater than a given number.
+
+To solve it we will use a while loop that will repeatedly multiply the current power of 2 by 2 until it becomes greater than the given number:
+```python
+number = 27
+power_of_two = 1
+
+while power_of_two <= number:
+    power_of_two *= 2
+
+print(power_of_two)
+```
+The example above is hardcoded to continue forever, creating an infinite loop. Typically, a while loop condition is a comparison or variable, and it determines when the loop ends:
+```python
+num = 0
+while num < 3:
+    num += 1
+    print(num)
+
+# prints:
+# 1
+# 2
+# 3
+# (the loop stops when num >= 3)
+```
 
