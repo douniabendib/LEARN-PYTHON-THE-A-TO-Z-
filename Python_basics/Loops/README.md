@@ -35,3 +35,30 @@ print(sum_numbers)
 ```
 This will first loop through all numbers between 1 and 101 (not including 101) and sum all of them. Then it will print the sum_numbers variable.
 
+# Whitespace in Python
+The body of a for-loop must be indented, otherwise you'll get a syntax error. Not only that, but every line in the body of the loop must be indented in the same way - we use the "4 spaces" convention. Pressing the <tab> key should automatically insert 4 spaces.
+
+Whitespace matters in Python.
+
+# Range Continued
+The range() function we've been using in our for loops actually has an optional 3rd parameter: the "step".
+```python
+for i in range(0, 10, 2):
+    print(i)
+# prints:
+# 0
+# 2
+# 4
+# 6
+# 8
+```
+The "step" parameter determines how much to add to i in each iteration of the loop. You can even go backwards:
+```python
+for i in range(3, 0, -1):
+    print(i)
+# prints:
+# 3
+# 2
+# 1
+```
+
