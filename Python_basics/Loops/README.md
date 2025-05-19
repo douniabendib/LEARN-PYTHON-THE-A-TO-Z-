@@ -100,4 +100,23 @@ while num < 3:
 # 3
 # (the loop stops when num >= 3)
 ```
+# Break
+The break statement stops the loop instantly when it's encountered.
+
+For example,
+```python
+for i in range(10): 
+    if i == 6:
+        break
+    print(i)
+```
+In the following example the loop iterates regularly until it reaches number 6. Then the program enters the if statement and executes the break statement. This exits the loop immediately. The output is:
+```python
+0
+1
+2
+3
+4
+5
+```
 
