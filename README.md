@@ -12,3 +12,8 @@ In this chapter, we will learn about:
 - Variables
 - Functions
 - Scope
+- Testing and Debugging
+- Computing
+- Comparisons
+- Loops
+- Lists
