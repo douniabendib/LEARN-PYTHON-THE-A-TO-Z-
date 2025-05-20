@@ -165,3 +165,28 @@ This will output:
 7
 9
 ```
+# Nested Loop
+A nested loop is a loop inside another loop. The inner loop completes all its iterations for each iteration of the outer loop.
+
+Let's create a simple nested loop:
+```python
+# Outer loop
+for i in range(3):
+    print(f"Outer loop iteration: {i}")
+    
+    # Inner loop
+    for j in range(2):
+        print(f"  Inner loop iteration: {j}")
+```
+When you run this code, you'll see:
+```python
+Outer loop iteration: 0
+  Inner loop iteration: 0
+  Inner loop iteration: 1
+Outer loop iteration: 1
+  Inner loop iteration: 0
+  Inner loop iteration: 1
+Outer loop iteration: 2
+  Inner loop iteration: 0
+  Inner loop iteration: 1
+```
