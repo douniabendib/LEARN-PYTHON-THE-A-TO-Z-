@@ -64,3 +64,11 @@ In this chapter, we will learn about:
 - If-Else
 - If-Else Practice
 
+## Chapter 8: Loops
+- For Loop
+- Range Continued
+- While Loop
+- Break
+- Continue
+- The Range Function
+- Nested Loop
