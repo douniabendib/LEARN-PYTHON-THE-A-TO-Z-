@@ -131,6 +131,28 @@ for tree in trees:
 ```
 tree, the variable declared using the in keyword, directly accesses the value in the list rather than the index of the value. If we don't need to update the item and only need to access its value then this is a more clean way to write the code.
 
+# The Enumerate Function
+The enumerate() function allows you to loop through a sequence (like a list, tuple, or string) while keeping track of the index position of each item.
+
+without enumerate() we would access both the index and the value the following way:
+```python
+fruits = ["apple", "banana", "orange"]
+for i in range(len(fruits)):
+    print(f"Index {i}: {fruits[i]}")
+```
+enumerate() is a more elegant way to get both index and value:
+```python
+fruits = ["apple", "banana", "orange"]
+for index, fruit in enumerate(fruits):
+    print(f"Index {index}: {fruit}")
+```
+Both examples will output:
+```python
+Index 0: apple
+Index 1: banana
+Index 2: orange
+``` 
+
 # Tuples
 A tuple is an immutable (read-only) ordered collection of elements. Unlike lists, once created, tuples cannot be modified.
 
