@@ -59,3 +59,16 @@ length = len(fruits)
 ```
 The length of the list is equal to the number of items present. Don't be fooled by the fact that the length is not equal to the index of the last element, in fact, it will always be one greater.
 
+## Modifying Lists
+
+In addition to accessing the elements of a list, you can also modify them. To modify a specific element in a list, you can assign a new value to it using its index.
+
+Here's an example:
+```python
+my_list = ["apple", "banana", "cherry"]
+my_list[1] = "orange"
+print(my_list)
+# ["apple", "orange", "cherry"]
+```
+banana was changed to an orange.
+
