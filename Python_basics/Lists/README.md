@@ -72,3 +72,49 @@ print(my_list)
 ```
 banana was changed to an orange.
 
+## List Methods
+Lists are packed with many methods (functionalities). To access a method, write:
+```python
+some_list.method()
+```
+Here is a list of the basic methods:
+
+- append(element) - adds an element to the end of the list
+- clear() - removes all elements from the list
+- pop(index) - removes an element at the specified index
+- reverse() - reverses the order of the list
+- sort() - sorts the list in ascending order
+
+* Appending():
+It's common to create an empty list then fill it with values using a loop. We can add values to the end of a list using the .append() method:
+```python
+cards = []
+cards.append("nvidia")
+cards.append("amd")
+# the cards list is now ['nvidia', 'amd']
+```
+* Pop():
+.pop() is the opposite of .append(). Pop removes the last element from a list and returns it for use. For example:
+```python
+vegetables = ["broccoli", "cabbage", "kale", "tomato"]
+last_vegetable = vegetables.pop()
+# vegetables = ['broccoli', 'cabbage', 'kale']
+# last_vegetable = 'tomato'
+```
+* Clear():
+Example of the clear method:
+```python
+my_list = [1, 2, 3, 4, 5]
+my_list.clear()
+print(my_list)
+# This will output []
+```
+* Sort():
+Example of the sort method:
+```python
+my_list = [1, 9, 2, 3]
+my_list.sort()
+print(my_list)
+# This will output [1, 2, 3, 9]
+```
+
