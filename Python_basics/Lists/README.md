@@ -85,7 +85,8 @@ Here is a list of the basic methods:
 - reverse() - reverses the order of the list
 - sort() - sorts the list in ascending order
 
-* Appending():
+- Appending():
+
 It's common to create an empty list then fill it with values using a loop. We can add values to the end of a list using the .append() method:
 ```python
 cards = []
@@ -93,7 +94,7 @@ cards.append("nvidia")
 cards.append("amd")
 # the cards list is now ['nvidia', 'amd']
 ```
-* Pop():
+- Pop():
 .pop() is the opposite of .append(). Pop removes the last element from a list and returns it for use. For example:
 ```python
 vegetables = ["broccoli", "cabbage", "kale", "tomato"]
@@ -101,7 +102,7 @@ last_vegetable = vegetables.pop()
 # vegetables = ['broccoli', 'cabbage', 'kale']
 # last_vegetable = 'tomato'
 ```
-* Clear():
+- Clear():
 Example of the clear method:
 ```python
 my_list = [1, 2, 3, 4, 5]
@@ -109,7 +110,7 @@ my_list.clear()
 print(my_list)
 # This will output []
 ```
-* Sort():
+- Sort():
 Example of the sort method:
 ```python
 my_list = [1, 9, 2, 3]
@@ -117,4 +118,16 @@ my_list.sort()
 print(my_list)
 # This will output [1, 2, 3, 9]
 ```
+## No-Index Syntax
+In my opinion, Python has the most elegant syntax for iterating directly over the items in a list without worrying about index numbers. If you don't need the index number you can use the following syntax:
+```python
+trees = ['oak', 'pine', 'maple']
+for tree in trees:
+    print(tree)
+# Prints:
+# oak
+# pine
+# maple
+```
+tree, the variable declared using the in keyword, directly accesses the value in the list rather than the index of the value. If we don't need to update the item and only need to access its value then this is a more clean way to write the code.
 
