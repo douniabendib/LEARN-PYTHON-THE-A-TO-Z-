@@ -153,6 +153,43 @@ Index 1: banana
 Index 2: orange
 ``` 
 
+## Iterating Over Strings
+String splitting allows you to break a string into a list, while joining lets you combine list items into a string.
+
+The split() method divides a string into a list of substrings based on a delimiter.
+
+Split by whitespace:
+```python
+text = "apple banana cherry"
+fruits = text.split()
+print(fruits)
+# ['apple', 'banana', 'cherry']
+```
+Split with specific delimiter:
+```python
+data = "john,25,new york"
+data = data.split(',')
+print(data)
+# ['john', '25', 'new york']
+```
+
+The join() method combines elements of an iterable into a single string.
+
+Basic joining:
+```python
+words = ['Hello', 'World', 'Python']
+text = ' '.join(words)
+print(text)
+# "Hello World Python"
+```
+Join with different separator:
+```python
+fruits = ['apple', 'banana', 'cherry']
+line = ','.join(fruits)
+print(line)
+# "apple,banana,cherry"
+```
+
 # Tuples
 A tuple is an immutable (read-only) ordered collection of elements. Unlike lists, once created, tuples cannot be modified.
 
