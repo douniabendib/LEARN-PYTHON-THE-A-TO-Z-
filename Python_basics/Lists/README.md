@@ -131,7 +131,7 @@ for tree in trees:
 ```
 tree, the variable declared using the in keyword, directly accesses the value in the list rather than the index of the value. If we don't need to update the item and only need to access its value then this is a more clean way to write the code.
 
-# The Enumerate Function
+## The Enumerate Function
 The enumerate() function allows you to loop through a sequence (like a list, tuple, or string) while keeping track of the index position of each item.
 
 without enumerate() we would access both the index and the value the following way:
@@ -189,7 +189,7 @@ line = ','.join(fruits)
 print(line)
 # "apple,banana,cherry"
 ```
-# List Slicing Part 1
+## List Slicing Part 1
 
 Slicing allows us to extract portions of a list using the following syntax: lst[start:stop]. For example consider this list:
 ```python
@@ -213,7 +213,7 @@ print(numbers[5:])
 ```
 When stop is omitted, slice goes until the end.
 
-# List Slicing Part 2
+## List Slicing Part 2
 
 Slicing has another step parameter: lst[start:stop:step], For example consider this list:
 ```python
@@ -252,6 +252,42 @@ print(numbers[::-1])
 Empty space before first : means “start from beginning”
 Empty space between : means “go until the end”
 -1 means "move backwards one step at a time"
+
+## Sequence Operators
+
+Python provides several operators that can be used with sequences like lists, strings, and tuples.
+
+Concatenation with the + operator joins two sequences together:
+
+```python
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+combined_list = list1 + list2
+```
+After executing the above code, combined_list contains:
+```python
+[1, 2, 3, 4, 5, 6]
+```
+Repetition with the * operator repeats a sequence a specified number of times:
+
+```python
+numbers = [1, 2, 3]
+repeated_numbers = numbers * 3
+```
+After executing the above code, repeated_numbers contains:
+
+```python
+[1, 2, 3, 1, 2, 3, 1, 2, 3]
+```
+These operators work with other sequences too:
+```python
+# String concatenation
+greeting = "Hello" + " " + "World"  # "Hello World"
+
+# String repetition
+stars = "*" * 5  # "*****"
+```
+
 
 # Tuples
 A tuple is an immutable (read-only) ordered collection of elements. Unlike lists, once created, tuples cannot be modified.
