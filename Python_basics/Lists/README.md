@@ -287,7 +287,28 @@ greeting = "Hello" + " " + "World"  # "Hello World"
 # String repetition
 stars = "*" * 5  # "*****"
 ```
+## List Deletion
+Python has a built-in keyword del that deletes items from objects. In the case of a list, you can delete specific indexes or entire slices.
+```python
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+# delete the fourth item
+del nums[3]
+print(nums)
+# Output: [1, 2, 3, 5, 6, 7, 8, 9]
+
+# delete the second item up to (but not including) the fourth item
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+del nums[1:3]
+print(nums)
+# Output: [1, 4, 5, 6, 7, 8, 9]
+
+# delete all elements
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+del nums[:]
+print(nums)
+# Output: []
+```
 
 # Tuples
 A tuple is an immutable (read-only) ordered collection of elements. Unlike lists, once created, tuples cannot be modified.
