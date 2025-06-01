@@ -72,3 +72,19 @@ In this chapter, we will learn about:
 - Continue
 - The Range Function
 - Nested Loop
+
+## chapter 9: Lists
+- Declaring a List
+- Lists Continued
+- Accessing List Elements
+- List Length
+- Modifying Lists
+- List Methods
+- No-Index Syntax
+- The Enumerate Function
+- Iterating Over Strings
+- List Slicing
+- Sequence Operators
+- List Deletion
+- Tuples
+
