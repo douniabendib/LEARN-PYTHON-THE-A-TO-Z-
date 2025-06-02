@@ -5,7 +5,7 @@ Learn the Advanced foundations of modern python programming with this powerful, 
 
 For each concept in this course, you'll master the theory then you'll  practice with many real examples.</p>
 
-## Chapter 1: Python basics:
+## Chapter 1: Fundamentals
 
 In this chapter, we will learn about:
 - Overview of Python
@@ -17,3 +17,8 @@ In this chapter, we will learn about:
 - Comparisons
 - Loops
 - Lists
+
+## Chapter2 : Logic & Flow
+In this chapter, we will learn about:
+- Dictionaries
+- Sets
