@@ -11,3 +11,7 @@ The logic_and_flow directory explores control structures and logic flow in Pytho
 - Nested Dictionaries
 - Checking for Keys
 
+## Chapter 2: Advanced Decision Making
+- Ternary Operator
+- Membership Checks
+- Identity Checks
