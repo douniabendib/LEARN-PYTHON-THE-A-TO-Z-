@@ -15,3 +15,13 @@ The logic_and_flow directory explores control structures and logic flow in Pytho
 - Ternary Operator
 - Membership Checks
 - Identity Checks
+
+## Chapter 3: Sets
+- What is a Set?
+- Basic Operations
+- Set Methods
+- Mathematical Operations Part 1
+- Mathematical Operations Part 2
+- Subsets and Supersets
+- Iterating Over Sets
+
