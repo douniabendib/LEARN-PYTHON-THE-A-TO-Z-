@@ -25,3 +25,8 @@ The logic_and_flow directory explores control structures and logic flow in Pytho
 - Subsets and Supersets
 - Iterating Over Sets
 
+## Chapter 4: Advanced Data Aggregation
+- Using Sum
+- Finding Minimum and Maximum
+- Sorting Data Efficiently
+
