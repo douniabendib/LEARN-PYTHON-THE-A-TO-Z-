@@ -19,3 +19,34 @@ print(squares)
 # Output: [1, 4, 9, 16, 25]
 ```
 In this example, the list comprehension creates a new list called squares by taking each element n from the numbers list and squaring it.
+
+## Creating Simple Lists
+
+Now that you know the syntax of list comprehensions, let’s dive into some simple examples to see how they can be used to create new lists quickly and efficiently.
+
+Create a list of cube numbers:
+```python
+cubes = [x**3 for x in range(1, 6)]
+print(cubes)
+# Output: [1, 8, 27, 64, 125]
+```
+Create a list of strings from characters:
+```python
+chars = [char for char in "hello"]
+print(chars)
+# Output: ['h', 'e', 'l', 'l', 'o']
+```
+Generate a list of even numbers:
+```python
+evens = [x for x in range(2, 11, 2)]
+print(evens)
+# Output: [2, 4, 6, 8, 10]
+```
+Convert all items in a list to uppercase:
+```python
+words = ["apple", "banana", "cherry"]
+uppercase = [word.upper() for word in words]
+print(uppercase)
+# Output: ['APPLE', 'BANANA', 'CHERRY']
+```
+List comprehensions make it easy to work with sequences, apply transformations, and even include conditions—all in one line!
