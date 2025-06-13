@@ -30,3 +30,8 @@ The logic_and_flow directory explores control structures and logic flow in Pytho
 - Finding Minimum and Maximum
 - Sorting Data Efficiently
 
+## Chapter 5: Basic List Comprehensions
+- The Syntax
+- Creating Simple Lists
+- Adding Conditions
+- Using Data Aggregation
