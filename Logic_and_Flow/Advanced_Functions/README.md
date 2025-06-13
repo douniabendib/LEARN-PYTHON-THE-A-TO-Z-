@@ -21,3 +21,26 @@ In this example, the function get_name_and_age returns the name and age values a
 
 Returning multiple values is useful when you need to return more than one piece of information from a function. Instead of creating a complex data structure like a list or a dictionary, you can simply return the values as a tuple.
 
+## Lambda Functions Part 1
+
+A lambda function is a small, anonymous function defined using the lambda keyword. Lambda functions can take any number of arguments but can only have one expression. They are useful for creating simple, one-line functions without the need for a full function definition using the def keyword.
+
+The syntax of a lambda function is:
+```python
+lambda arguments: expression
+```
+Here's a breakdown of the syntax:
+
+- lambda: The keyword that indicates the start of a lambda function definition.
+- arguments: A comma-separated list of arguments, similar to the parameters in a regular function definition.
+- expression: A single expression that is evaluated and returned as the result of the lambda function.
+Here's an example of a lambda function that adds two numbers:
+```python
+add = lambda x, y: x + y
+result = add(5, 3)
+print(result)
+# Output: 8
+```
+In this example, the lambda function takes two arguments, x and y, and returns their sum. The lambda function is assigned to the variable add, which can then be called like a regular function.
+
+Lambda functions are often used in situations where a short, throwaway function is needed, such as with higher-order functions like map, filter, and reduce.
