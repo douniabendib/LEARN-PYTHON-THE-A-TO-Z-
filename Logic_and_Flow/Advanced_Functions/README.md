@@ -44,3 +44,23 @@ print(result)
 In this example, the lambda function takes two arguments, x and y, and returns their sum. The lambda function is assigned to the variable add, which can then be called like a regular function.
 
 Lambda functions are often used in situations where a short, throwaway function is needed, such as with higher-order functions like map, filter, and reduce.
+
+## Lambda Functions Part 2
+
+Lambda functions can also include conditional logic using the if-else expression syntax.
+
+Create a basic lambda function with an if-else condition:
+```python
+# Format: lambda parameters: value_if_true if condition else value_if_false
+is_adult = lambda age: "Adult" if age >= 18 else "Minor"
+```
+Test the lambda function with different values:
+```python
+print(is_adult(20))  # Output: "Adult"
+print(is_adult(15))  # Output: "Minor"
+```
+You can use more complex conditions as well:
+```python
+grade_status = lambda score: "Amazing!" if score == 100 else "Pass" if score >= 60 else "Fail"
+print(grade_status(75))  # Output: "Pass"
+```
