@@ -35,3 +35,10 @@ The logic_and_flow directory explores control structures and logic flow in Pytho
 - Creating Simple Lists
 - Adding Conditions
 - Using Data Aggregation
+
+## Chapter 6: Advanced Functions
+- Returning Multiple Values
+- Lambda Functions
+- Lambda Sort
+- Recursive Functions
+
