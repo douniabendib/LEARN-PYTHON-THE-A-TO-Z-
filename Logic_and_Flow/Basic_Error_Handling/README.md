@@ -59,3 +59,36 @@ Invalid input! Please enter a number.
 ```
 In this example, instead of crashing, the program catches the ValueError and prints a friendly message. Use try-except to handle specific exceptions and keep your program running smoothly.
 
+## Handling Multiple Exceptions
+
+In Python, we can handle different types of exceptions in separate except blocks. This allows us to respond differently based on the specific error that occurs.
+
+Start with a basic try-except structure:
+```python
+try:
+    # Code that might raise exceptions
+    pass
+except Exception as e:
+    # Handle any exception
+    pass
+```
+To handle multiple exceptions, add specific except blocks:
+```python
+try:
+    number = int(input("Enter a number: "))
+    result = 10 / number
+    print(result)
+except ValueError:
+    print("That's not a valid number!")
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+```
+You can also catch multiple exception types in a single except block:
+```python
+try:
+    # Some code
+    pass
+except (ValueError, TypeError):
+    print("Invalid input type!")
+```
+The order of except blocks matters - always place more specific exceptions before more general ones.
