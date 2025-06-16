@@ -15,3 +15,47 @@ n = int(s)  # This will raise a ValueError
 print(n)
 ```
 In this example, the int() function cannot convert the string "abc" into an integer, so it raises a ValueError. Without error handling, this exception would cause the program to crash.
+
+## Errors and Exceptions in Python
+You've probably encountered some errors in your code from time to time if you've gotten this far in the course. In Python, there are two main kinds of distinguishable errors:
+
+- Syntax errors
+- Exceptions
+
+## Syntax Errors
+You probably know what these are by now. A syntax error is just the Python interpreter telling you that your code isn't adhering to proper Python syntax.
+```python
+this is not valid code, so it will error
+```
+If I try to run that sentence as if it were valid code I'll get a syntax error:
+```python
+this is not valid code, so it will error
+      ^
+SyntaxError: invalid syntax
+```
+## The Try and Except Block
+
+The try-except block in Python allows you to handle exceptions and prevent your program from crashing. Code that might raise an exception is placed inside the try block, and the except block handles the error if it occurs.
+
+Here’s the basic structure:
+```python
+try:
+    # Code that might cause an exception
+    risky_code()
+except ExceptionType:
+    # Code to handle the exception
+    handle_error()
+```
+Example:
+```python
+try:
+    num = int("abc")  # This raises a ValueError
+except ValueError:
+    print("Invalid input! Please enter a number.")
+```
+Output:
+```python
+Invalid input! Please enter a number.
+```
+In this example, instead of crashing, the program catches the ValueError and prints a friendly message. Use try-except to handle specific exceptions and keep your program running smoothly.
+
