@@ -42,3 +42,11 @@ The logic_and_flow directory explores control structures and logic flow in Pytho
 - Lambda Sort
 - Recursive Functions
 
+## Chapter 7: Basic Error Handling
+- What is Error Handling?
+- Errors and Exceptions in Python
+- The Try and Except Block
+- Handling Multiple Exceptions
+- Different Types of Exceptions
+- Why Specific Exceptions Come First?
+- Alias Exception Messages
