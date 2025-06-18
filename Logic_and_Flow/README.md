@@ -50,3 +50,8 @@ The logic_and_flow directory explores control structures and logic flow in Pytho
 - Different Types of Exceptions
 - Why Specific Exceptions Come First?
 - Alias Exception Messages
+
+## Chapter 8: Higher-Order Functions
+- The Map Function
+- The Filter Function
+
