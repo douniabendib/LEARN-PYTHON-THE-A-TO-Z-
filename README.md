@@ -26,3 +26,6 @@ In this chapter, we will learn about:
 - Advanced Data Aggregation
 - Basic List Comprehensions
 - Advanced Functions
+- Basic Error Handling
+- Higher-Order Functions
+
