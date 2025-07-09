@@ -46,3 +46,51 @@ Another "rule of thumb" for writing maintainable code is "Don't Repeat Yourself"
 - If you need to change it, you have to change it in multiple places
 - If you forget to change it in one place, you'll have a bug
 - It's more work to write it over and over again
+
+## Classes vs Objects
+
+In Object-Oriented Programming, understanding the difference between classes and objects is fundamental:
+
+* Classes are blueprints or templates that define the structure and behavior for creating objects.
+
+* Objects are instances of classes - concrete entities created from the class blueprint.
+
+Think of a class as a cookie cutter and objects as the cookies made from it:
+```python
+# Define a class
+class Dog:
+    # Class attribute (shared by all instances)
+```
+This creates a simple Dog class with a class attribute species
+```python
+# Create objects (instances) of the Dog class
+dog1 = Dog()
+dog2 = Dog()
+```
+Now we have two different dog objects, but they're empty except for the shared species attribute.
+```python
+# Add unique attributes to each dog
+dog1.name = "Buddy"
+dog1.breed = "Golden Retriever"
+
+dog2.name = "Rex"
+dog2.breed = "German Shepherd"
+```
+Each dog now has its own unique attributes.
+```python
+# Access attributes
+print(f"{dog1.name} is a {dog1.breed}")
+# Output: Buddy is a Golden Retriever
+print(f"{dog2.name} is a {dog2.breed}")
+# Output: Rex is a German Shepherd
+
+# Both dogs share the class attribute
+print(f"Both dogs are {Dog.species}")
+# Output: Both dogs are Canis familiaris
+```
+The key difference:
+
+- The class (Dog) is the template
+- The objects (dog1 and dog2) are specific instances with their own data
+
+    species = "Canis familiaris"
