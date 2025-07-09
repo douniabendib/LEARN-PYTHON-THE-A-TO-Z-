@@ -37,4 +37,12 @@ Clean Code Does:
 - Make code easier to work with
 - Make it easier to find and fix bugs
 - Make the development process faster
-Help us retain our sanity
+- Help us retain our sanity
+
+## DRY Code
+
+Another "rule of thumb" for writing maintainable code is "Don't Repeat Yourself" (DRY). It means that, when possible, you should avoid writing the same code in multiple places. Repeating code can be bad because:
+
+- If you need to change it, you have to change it in multiple places
+- If you forget to change it in one place, you'll have a bug
+- It's more work to write it over and over again
