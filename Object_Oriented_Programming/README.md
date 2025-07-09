@@ -23,3 +23,18 @@ class Person:
 john = Person()
 ```
 In the next lessons, we'll explore these concepts in depth and learn how to define attributes and methods for our classes.
+
+## Clean Code
+
+Paradigms like object-oriented programming and functional programming are all about making code easier to work with. After all, programmers are just feeble humans. Code that's easy for humans to understand is called "clean code".
+
+Clean Code Does Not:
+- Make your programs run faster
+- Make your programs function correctly
+- Only occur in object-oriented programming
+
+Clean Code Does:
+- Make code easier to work with
+- Make it easier to find and fix bugs
+- Make the development process faster
+Help us retain our sanity
