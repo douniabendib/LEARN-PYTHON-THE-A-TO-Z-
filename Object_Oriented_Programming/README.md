@@ -94,3 +94,33 @@ The key difference:
 - The objects (dog1 and dog2) are specific instances with their own data
 
     species = "Canis familiaris"
+
+## The self Parameter
+
+In Python, the self parameter is a convention used to refer to the instance of a class within methods. It allows you to access and modify the attributes and call other methods of the current instance.
+
+When you define a method in a class, the first parameter must always refer to the instance itself. By convention, this parameter is named self, though you could technically use any name (but don't - using self is standard practice).
+```python
+class Dog:
+    # Method with self parameter
+    def bark(self):
+        print("Woof!")
+    
+    # Method that uses self to access instance attributes
+    def describe(self):
+        print(f"I am {self.name}, a {self.breed}")
+```
+Here, self helps the method know which particular dog is barking or being described.
+
+When you create methods, you always include self as the first parameter. However, when you call these methods, you don't explicitly pass a value for self - Python handles this automatically:
+```python
+# Create a dog object
+rex = Dog()
+rex.name = "Rex"
+rex.breed = "German Shepherd"
+
+# Call methods
+rex.bark()      # Output: Woof!
+rex.describe()  # Output: I am Rex, a German Shepherd
+```
+When rex.bark() is called, Python automatically passes rex as the self parameter to the bark method.
