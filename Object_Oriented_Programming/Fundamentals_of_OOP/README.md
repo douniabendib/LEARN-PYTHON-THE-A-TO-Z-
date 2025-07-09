@@ -119,3 +119,78 @@ rex = Dog()
 rex.name = "Rex"
 rex.breed = "German Shepherd"
 ```
+
+## Attributes and Methods
+
+In Object-Oriented Programming, classes consist of two main components:
+
+- Attributes: Data or variables that belong to a class or its instances. They represent the state or properties of an object.
+
+- Methods: Functions that belong to a class. They define the behaviors or actions that objects of the class can perform.
+
+Let's explore both concepts:
+
+* Attributes can be:
+
+- Instance attributes: Unique to each object (defined with self)
+- Class attributes: Shared across all instances of a class
+
+Let's explore both concepts:
+```python
+class Student:
+    # Class attribute - shared by all instances
+    school = "Python High"
+    
+    def set_details(self, name, age, grade):
+        # Instance attributes - unique to each student
+        self.name = name
+        self.age = age
+        self.grade = grade
+```
+
+* Methods are functions that are defined within a class and operate on its attributes:
+```python
+class Student:
+    school = "Python High"
+    
+    def set_details(self, name, age, grade):
+        self.name = name
+        self.age = age
+        self.grade = grade
+    
+    # Method to display student information
+    def display_info(self):
+        print(f"Name: {self.name}, Age: {self.age}, Grade: {self.grade}")
+    
+    # Method with parameters
+    def is_passing(self, passing_grade="C"):
+        return self.grade <= passing_grade
+```
+Here's how to use these attributes and methods:
+```python
+# Create student objects
+alice = Student()
+bob = Student()
+
+# Set attributes using the method
+alice.set_details("Alice", 16, "A")
+bob.set_details("Bob", 17, "B")
+
+# Access instance attributes
+print(alice.name)
+# Output: Alice
+print(bob.age)
+# Output: 17
+
+# Access class attribute
+print(alice.school)
+# Output: Python High
+print(bob.school)
+# Output: Python High
+
+# Call methods
+alice.display_info()
+# Output: Name: Alice, Age: 16, Grade: A
+print(bob.is_passing())
+# Output: True
+```
