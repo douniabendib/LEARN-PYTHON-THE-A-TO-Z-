@@ -194,3 +194,9 @@ alice.display_info()
 print(bob.is_passing())
 # Output: True
 ```
+## Methods Can Return
+
+If a normal function doesn't return anything, it's typically not a very useful function. In contrast, methods often don't return anything because they can mutate (update) the properties of the object instead. That's exactly what we did in the last assignment.
+
+However, they can return values if you want! They're just functions with access to an object, after all. A common use case is a "getter" method that returns a calculated value based on the properties of the object.
+
