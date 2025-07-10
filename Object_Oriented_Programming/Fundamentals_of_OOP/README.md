@@ -130,10 +130,10 @@ In Object-Oriented Programming, classes consist of two main components:
 
 Let's explore both concepts:
 
-* Attributes can be:
+- Attributes can be:
 
-- Instance attributes: Unique to each object (defined with self)
-- Class attributes: Shared across all instances of a class
+1. Instance attributes: Unique to each object (defined with self)
+2. Class attributes: Shared across all instances of a class
 
 Let's explore both concepts:
 ```python
@@ -200,3 +200,27 @@ If a normal function doesn't return anything, it's typically not a very useful f
 
 However, they can return values if you want! They're just functions with access to an object, after all. A common use case is a "getter" method that returns a calculated value based on the properties of the object.
 
+## Constructor Method (__init__)
+
+The __init__ method is a special method in Python classes that serves as a constructor. It's automatically called when you create a new object from a class.
+
+The primary purpose of __init__ is to initialize the attributes of an object when it's created.
+```python
+class Dog:
+    # Constructor method
+    def __init__(self, name, breed):
+        self.name = name
+        self.breed = breed
+```
+Now when we create a dog, we can pass the name and breed directly:
+```python
+# Create a dog using the constructor
+rex = Dog("Rex", "German Shepherd")
+
+# Access attributes
+print(rex.name)
+# Output: Rex
+print(rex.breed)
+# Output: German Shepherd
+```
+The __init__ method makes our code more concise and ensures objects are properly initialized at creation time.
