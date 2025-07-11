@@ -94,3 +94,49 @@ Properties are valuable for:
 - Data validation
 - Computing values on-the-fly
 - Encapsulating internal data structures
+
+## Private Attributes
+
+In Python, there's a convention for indicating that an attribute should be treated as private (not accessed directly from outside the class). We prefix the attribute name with a single underscore _ or double underscore __.
+
+Single underscore _attribute: Indicates the attribute is intended for internal use. This is a convention, not a strict rule - the attribute can still be accessed directly.
+```python
+class Person:
+    def __init__(self, name, age):
+        self._name = name
+        # Convention: "private" attribute
+        self._age = age
+        # Convention: "private" attribute
+```
+Double underscore __attribute: Triggers name mangling - Python renames the attribute to make it harder to access directly from outside the class.
+```python
+class Person:
+    def __init__(self, name, age):
+        self.__name = name
+        # Will be "mangled" to _Person__name
+        self.__age = age
+        # Will be "mangled" to _Person__age
+```
+To access private attributes properly, you should create public methods or properties:
+```python
+def get_name(self):
+    return self.__name
+    
+def set_age(self, age):
+    if age >= 0:
+        self.__age = age
+```
+While you can still access double-underscore attributes, it requires knowing the mangled name:
+
+```python
+coddy = User("Coddy", 25)
+# Direct access (discouraged):
+print(coddy._User__name)
+# Output: Coddy
+```
+
+Private attributes help with:
+
+- Encapsulation (hiding internal details)
+- Preventing accidental modification
+- Adding validation when values are changed
