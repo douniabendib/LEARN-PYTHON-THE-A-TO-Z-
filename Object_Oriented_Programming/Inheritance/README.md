@@ -164,3 +164,36 @@ print(sparrow.fly())    # From Flyable class
 print(sparrow.sing())   # Bird's own method
 ```
 
+## Method Resolution Order
+
+When working with inheritance in Python, especially multiple inheritance, it's important to understand how Python determines which method to call when the same method exists in multiple parent classes. This is determined by the Method Resolution Order (MRO).
+
+The Method Resolution Order is the sequence Python follows to look for methods and attributes in a class hierarchy. Python uses the C3 Linearization algorithm to determine the MRO.
+
+You can view the MRO of a class using the __mro__ attribute or the mro() method:
+```python
+# Example of MRO in multiple inheritance
+class A:
+    def method(self):
+        return "Method from A"
+
+class B:
+    def method(self):
+        return "Method from B"
+
+class C(A, B):
+    pass
+
+# Viewing the MRO
+print(C.__mro__)
+# Output: (<class '__main__.C'>, <class '__main__.A'>, <class '__main__.B'>, <class 'object'>)
+
+# Using the method
+c = C()
+print(c.method())  # Will print "Method from A" because A comes first in the MRO
+```
+The MRO follows these general rules:
+
+- It checks the class itself first
+- Then it checks the parent classes from left to right as listed in the class definition
+- It ensures that no class appears before any of its ancestors
