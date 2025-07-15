@@ -74,3 +74,54 @@ The super() function helps you:
 - Avoid duplicating code
 - Ensure proper initialization
 - Extend parent behavior
+
+## Method Overriding
+
+Method overriding is a feature in inheritance where a child class provides its own implementation of a method that is already defined in its parent class. This allows the child class to change how the inherited method behaves.
+
+To override a method:
+
+1. Create a method in the child class with the same name as in the parent class
+2. Give it the same parameters (although you can add more)
+3. Implement the new behavior you want
+Here's an example:
+```python
+# Parent class
+class Animal:
+    def __init__(self, name):
+        self.name = name
+    
+    def make_sound(self):
+        print("Some generic animal sound")
+    
+    def info(self):
+        print(f"I am {self.name}")
+
+# Child class with method overriding
+class Dog(Animal):
+    def make_sound(self):
+        print("Woof! Woof!")  # Override the parent method
+```
+When you call the overridden method on a child object, Python uses the child's version instead of the parent's:
+```python
+# Create instances
+animal = Animal("Generic Animal")
+dog = Dog("Buddy")
+
+# Call the methods
+animal.make_sound()
+# Output: Some generic animal sound
+dog.make_sound()
+# Output: Woof! Woof!
+
+# Non-overridden methods still work normally
+animal.info()
+# Output: I am Generic Animal
+dog.info()
+# Output: I am Buddy
+```
+Method overriding allows you to:
+
+- Customize inherited behavior for specific child classes
+- Adapt parent class methods to fit the child class's needs
+- Implement polymorphism (objects of different classes responding differently to the same method call)
