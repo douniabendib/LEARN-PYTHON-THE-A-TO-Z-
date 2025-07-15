@@ -125,3 +125,42 @@ Method overriding allows you to:
 - Customize inherited behavior for specific child classes
 - Adapt parent class methods to fit the child class's needs
 - Implement polymorphism (objects of different classes responding differently to the same method call)
+
+## Multiple Inheritance
+
+Multiple inheritance is a feature in Python that allows a class to inherit attributes and methods from more than one parent class. This powerful capability enables you to combine functionality from different classes.
+
+Here's how you can implement multiple inheritance:
+```python
+# Parent class 1
+class Animal:
+    def __init__(self, name):
+        self.name = name
+    
+    def eat(self):
+        return f"{self.name} is eating"
+
+# Parent class 2
+class Flyable:
+    def fly(self):
+        return f"{self.name} is flying"
+
+# Child class inheriting from both parents
+class Bird(Animal, Flyable):
+    def __init__(self, name, species):
+        super().__init__(name)
+        self.species = species
+    
+    def sing(self):
+        return f"{self.name} is singing"
+```
+In this example, Bird inherits from both Animal and Flyable. It has access to the eat method from Animal and the fly method from Flyable. It also has its own sing method.
+
+You can create an instance of Bird and call methods from both parent classes:
+```python
+sparrow = Bird("Sparrow", "House sparrow")
+print(sparrow.eat())    # From Animal class
+print(sparrow.fly())    # From Flyable class
+print(sparrow.sing())   # Bird's own method
+```
+
