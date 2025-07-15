@@ -40,3 +40,37 @@ Inheritance helps you:
 - Create hierarchies of related classes
 - Organize code into logical parent-child relationships
 
+## The super() Function
+
+The super() function allows a child class to call methods from its parent class. This is useful when you want to extend parent functionality rather than completely replace it.
+
+When overriding methods, the parent's method isn't automatically called. The super() function gives you a way to call it explicitly.
+
+Common uses of super():
+
+Calling the parent's __init__ method:
+```python
+class Animal:
+   def __init__(self, name):
+       self.name = name
+class Dog(Animal):
+   def __init__(self, name, breed):
+       super().__init__(name)  # Call parent's __init__
+       self.breed = breed
+```
+Extending a parent method:
+```python
+class Animal:
+    def make_sound(self):
+        print("Generic sound")
+
+class Dog(Animal):
+    def make_sound(self):
+        super().make_sound()  # Call parent's method
+        print("Woof!")        # Add dog-specific sound
+```
+The super() function helps you:
+
+- Avoid duplicating code
+- Ensure proper initialization
+- Extend parent behavior
