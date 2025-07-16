@@ -44,3 +44,43 @@ Polymorphism makes code more:
 - Flexible: You can add new animal types without changing how they're processed
 - Extensible: New behaviors can be added by creating new subclasses
 - Clean: You avoid complex if/elif/else chains for different types
+
+## Duck Typing
+
+Duck typing is a concept in programming that focuses on what an object can do, rather than what it is. The name comes from the phrase: "If it walks like a duck and quacks like a duck, then it's probably a duck."
+
+In Python, duck typing means that we don't care about the class type of an object; we only care if it has the methods and properties we need. Unlike traditional inheritance-based polymorphism, duck typing doesn't require a common parent class.
+
+Here's a simple example:
+```python
+class Duck:
+    def swim(self):
+        return "Duck swimming"
+    
+    def quack(self):
+        return "Quack!"
+
+class Person:
+    def swim(self):
+        return "Person swimming"
+    
+    def quack(self):
+        return "Person imitating a duck: Quack!"
+```
+With duck typing, we can create a function that works with any object that has the required methods:
+```python
+def make_it_swim_and_quack(duck_like_object):
+    print(duck_like_object.swim())
+    print(duck_like_object.quack())
+
+# This works for both classes, even though they don't share a parent class
+make_it_swim_and_quack(Duck())
+make_it_swim_and_quack(Person())
+```
+Duck typing is powerful because it:
+
+- Provides flexibility
+- Reduces dependencies between classes
+- Makes code more reusable
+- Follows Python's "easier to ask forgiveness than permission" philosophy
+
