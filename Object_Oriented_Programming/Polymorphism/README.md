@@ -84,3 +84,40 @@ Duck typing is powerful because it:
 - Makes code more reusable
 - Follows Python's "easier to ask forgiveness than permission" philosophy
 
+## Abstract Classes and Methods
+
+Abstract classes are classes that can't be instantiated directly and are designed to be subclassed. They often contain abstract methods - methods that are declared but don't have an implementation in the abstract class. These methods must be implemented by any concrete (non-abstract) subclass.
+
+Python doesn't have built-in abstract classes, but provides the abc module (Abstract Base Classes) to create them:
+```python
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+    
+    @abstractmethod
+    def perimeter(self):
+        pass
+    
+    def describe(self):
+        return "This is a shape"  # Concrete method
+```
+A class inheriting from an abstract class must implement all its abstract methods, or it will also be abstract:
+```python
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+    
+    def area(self):
+        return 3.14 * self.radius ** 2
+    
+    def perimeter(self):
+        return 2 * 3.14 * self.radius
+```
+Abstract classes are useful for:
+
+- Defining interfaces that derived classes must implement
+- Providing common functionality while forcing specific implementations
+- Creating a clear hierarchy of related classes
