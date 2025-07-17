@@ -112,3 +112,41 @@ In this example:
 - _balance is protected by convention
 - __account_number is private and is name-mangled to _BankAccount__account_number
 - Methods like deposit, withdraw, and get_balance provide controlled access to protected data
+
+## Property Decorators Advanced
+
+Building on basic property decorators, Python offers more advanced property capabilities:
+
+* Computed Properties - Derived from other attributes:
+```python
+@property
+def area(self):
+   return self.width * self.height
+```
+* Property Deleters - Handle deletion with del obj.property:
+```python
+@property.deleter
+def score(self):
+    print("Resetting score")
+    self._score = 0
+```
+* Full Property Control - Combine getter, setter, and deleter:
+```python
+# Getter
+@property
+def temperature(self):
+    return self._temp
+
+# Setter with validation
+@temperature.setter
+def temperature(self, value):
+    if value < -273.15:
+        raise ValueError("Below absolute zero!")
+    self._temp = value
+    
+# Deleter
+@temperature.deleter
+def temperature(self):
+    self._temp = 0
+```
+These advanced techniques help create intuitive interfaces while maintaining strong encapsulation.
