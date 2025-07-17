@@ -121,3 +121,45 @@ Abstract classes are useful for:
 - Defining interfaces that derived classes must implement
 - Providing common functionality while forcing specific implementations
 - Creating a clear hierarchy of related classes
+
+## Interface Design
+
+In Python, an interface is a specification for behavior that classes can implement. Unlike some languages, Python doesn't have a formal interface keyword, but we can create interfaces using abstract base classes where all methods are abstract.
+
+A well-designed interface should:
+
+- Define a clear contract for implementing classes
+- Be focused on a specific set of related functionality
+- Have method names that clearly indicate their purpose
+
+Here's how to create an interface in Python:
+```python
+from abc import ABC, abstractmethod
+
+class Drawable(ABC):
+    @abstractmethod
+    def draw(self):
+        pass
+    
+    @abstractmethod
+    def resize(self, width, height):
+        pass
+```
+Classes can then implement this interface:
+```python
+class Circle(Drawable):
+    def __init__(self, radius):
+        self.radius = radius
+    
+    def draw(self):
+        return "Drawing a circle"
+    
+    def resize(self, width, height):
+        self.radius = min(width, height) / 2
+        return f"Resized circle to radius {self.radius}"
+```
+Interfaces help with:
+
+- Creating plug-and-play components
+- Ensuring all implementations provide required functionality
+- Making code more maintainable and testable
