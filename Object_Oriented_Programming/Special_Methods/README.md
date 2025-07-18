@@ -30,3 +30,37 @@ Some common magic methods include:
 - __len__: Called when the len() function is used on the object
 - __add__: Called when the + operator is used
 Magic methods make your classes more Pythonic by allowing them to work with built-in functions and operators, providing a more intuitive interface for users of your class.
+
+## Operator Overloading
+Operator Overloading
+
+Operator overloading allows your classes to work with Python's built-in operators (+, -, *, etc.) by implementing special magic methods. Each operator corresponds to a specific method:
+```python
+class Vector:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    
+    # + operator
+    def __add__(self, other):
+        return Vector(self.x + other.x, self.y + other.y)
+    
+    # * operator
+    def __mul__(self, scalar):
+        return Vector(self.x * scalar, self.y * scalar)
+    
+    def __str__(self):
+        return f"Vector({self.x}, {self.y})"
+
+# Using the operators
+v1 = Vector(2, 3)
+v2 = Vector(5, 7)
+print(v1 + v2)
+# Output: Vector(7, 10)
+print(v1 * 3)
+# Output: Vector(6, 9)
+```
+Common operator methods include:
+
+__add__ (+), __sub__ (-), __mul__ (*), __truediv__ (/)
+__eq__ (==), __lt__ (<), __gt__ (>)
