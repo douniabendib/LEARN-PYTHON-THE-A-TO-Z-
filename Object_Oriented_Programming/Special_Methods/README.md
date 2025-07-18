@@ -64,3 +64,47 @@ Common operator methods include:
 
 __add__ (+), __sub__ (-), __mul__ (*), __truediv__ (/)
 __eq__ (==), __lt__ (<), __gt__ (>)
+
+## Container Magic Methods
+
+Container magic methods allow your classes to behave like built-in container types (lists, dictionaries, etc.). These methods enable operations such as indexing, length checking, and iteration on your custom objects.
+
+Key container magic methods include:
+```python
+class CustomList:
+    def __init__(self, items):
+        self.items = items
+    
+    # Makes len(obj) work
+    def __len__(self):
+        return len(self.items)
+    
+    # Makes obj[index] work for retrieval
+    def __getitem__(self, index):
+        return self.items[index]
+    
+    # Makes obj[index] = value work for assignment
+    def __setitem__(self, index, value):
+        self.items[index] = value
+    
+    # Makes iteration work (for item in obj)
+    def __iter__(self):
+        return iter(self.items)
+    
+    # Makes 'in' operator work (item in obj)
+    def __contains__(self, item):
+        return item in self.items
+
+# Usage example
+my_list = CustomList([1, 2, 3, 4])
+print(len(my_list))         # Output: 4
+print(my_list[2])           # Output: 3
+my_list[1] = 10
+print(my_list[1])           # Output: 10
+print(3 in my_list)         # Output: True
+
+# Iterating works too
+for item in my_list:
+    print(item)
+```
+These methods make your custom classes feel more like Python's native data structures, providing a more intuitive interface for users.
