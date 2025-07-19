@@ -142,3 +142,36 @@ person = EnhancedPerson("Alice")
 print(person.greet())     # Output: Hello, my name is Alice
 print(person.farewell())  # Output: Goodbye from Alice
 ```
+
+## Context Managers
+
+Context managers in Python allow you to allocate and release resources precisely when you want to. The most common example is opening a file.
+
+Create a context manager using the with statement:
+```python
+with open('example.txt', 'w') as file:
+    file.write('Hello, world!')
+```
+The file is automatically closed after the block, even if an exception occurs.
+
+You can create your own context managers by implementing __enter__ and __exit__ methods in a class:
+```python
+class MyContext:
+    def __enter__(self):
+        print("Entering the context")
+        return self
+    
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        print("Exiting the context")
+```
+Use your custom context manager:
+```python
+with MyContext() as ctx:
+    print("Inside the context")
+```
+The output will be:
+```python
+Entering the context
+Inside the context
+Exiting the context
+```python
