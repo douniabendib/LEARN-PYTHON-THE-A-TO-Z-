@@ -61,3 +61,43 @@ print(user.to_json())
 # Outputs: {"name": "Alice", "email": "alice@example.com"}
 ```
 Mixins allow for code reuse across different class hierarchies and help avoid the complexity of deep inheritance trees.
+
+## Static and Class Methods
+
+In Python, besides regular instance methods, classes can have static methods and class methods.
+
+Create a class with a static method:
+```python
+class MathHelper:
+    @staticmethod
+    def add(a, b):
+        return a + b
+```
+The @staticmethod decorator marks a method that doesn't need an instance.
+
+Call the static method directly from the class:
+```python
+result = MathHelper.add(5, 3)
+print(result)  # Output: 8
+```
+Now create a class with a class method:
+```python
+class Person:
+    count = 0
+    
+    def __init__(self, name):
+        self.name = name
+        Person.count += 1
+    
+    @classmethod
+    def get_count(cls):
+        return cls.count
+```
+The @classmethod decorator marks a method that receives the class as its first parameter.
+
+Use the class method to access a class variable:
+```python
+person1 = Person("Alice")
+person2 = Person("Bob")
+print(Person.get_count())  # Output: 2
+```
