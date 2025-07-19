@@ -101,3 +101,44 @@ person1 = Person("Alice")
 person2 = Person("Bob")
 print(Person.get_count())  # Output: 2
 ```
+
+## Class Decorators
+
+Class decorators allow you to modify or enhance classes by wrapping them with another function. This is similar to function decorators, but applied to class definitions.
+
+Define a simple class:
+```python
+class Person:
+    def __init__(self, name):
+        self.name = name
+        
+    def greet(self):
+        return f"Hello, my name is {self.name}"
+```
+Create a class decorator that adds a new method:
+```python
+def add_farewell(cls):
+    # Define the new method we want to add
+    def farewell(self):
+        return f"Goodbye from {self.name}"
+    
+    # Add the method to the class
+    cls.farewell = farewell
+    return cls
+```
+Apply the decorator to the class:
+```python
+@add_farewell
+class EnhancedPerson:
+    def __init__(self, name):
+        self.name = name
+        
+    def greet(self):
+        return f"Hello, my name is {self.name}"
+```
+Now you can create an instance and use both methods:
+```python
+person = EnhancedPerson("Alice")
+print(person.greet())     # Output: Hello, my name is Alice
+print(person.farewell())  # Output: Goodbye from Alice
+```
