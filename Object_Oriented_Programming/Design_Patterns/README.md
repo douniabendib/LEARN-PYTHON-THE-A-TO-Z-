@@ -105,3 +105,61 @@ The *args approach allows our factory to:
 - Simplify our interface to a single method
 - Easily extend to new product types with different initialization needs
 - This flexibility is especially valuable when your factory creates a diverse range of objects with varying constructor parameters.
+
+## Observer Pattern
+
+Python Object Oriented Programming Design Patterns Observer Pattern
+Lesson Body:
+The Observer Pattern is a behavioral design pattern where an object (the subject) maintains a list of dependents (observers) and notifies them of state changes.
+
+Create a Subject class that manages observers:
+```python
+class Subject:
+    def __init__(self):
+        self._observers = []
+    
+    def attach(self, observer):
+        self._observers.append(observer)
+```
+Now create a method to notify all observers:
+```python
+def notify(self, message):
+    for observer in self._observers:
+        observer.update(message)
+```
+Define an Observer interface:
+```python
+class Observer:
+    def update(self, message):
+        pass
+```
+Create a concrete observer class:
+```python
+class ConcreteObserver(Observer):
+    def __init__(self, name):
+        self.name = name
+    
+    def update(self, message):
+        print(f"{self.name} received: {message}")
+```
+Usage example:
+```python
+# Create subject
+subject = Subject()
+
+# Create observers
+observer1 = ConcreteObserver("Observer 1")
+observer2 = ConcreteObserver("Observer 2")
+
+# Attach observers to subject
+subject.attach(observer1)
+subject.attach(observer2)
+
+# Notify all observers
+subject.notify("Hello Observers!")
+```
+Output:
+```python
+Observer 1 received: Hello Observers!
+Observer 2 received: Hello Observers!
+```
