@@ -22,7 +22,7 @@ For calculation purposes:
 
 Use 3.14159 for pi
 For triangle area, you can use a simplified formula for the specific case of 
-a right triangle: (base * height)/2
+a right triangle: (base * height)/2.
 """
 class Shape:
 
