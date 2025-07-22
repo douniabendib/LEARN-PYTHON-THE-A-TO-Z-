@@ -108,8 +108,8 @@ The *args approach allows our factory to:
 
 ## Observer Pattern
 
-Python Object Oriented Programming Design Patterns Observer Pattern
-Lesson Body:
+### Python Object Oriented Programming Design Patterns Observer Pattern
+### Lesson Body:
 The Observer Pattern is a behavioral design pattern where an object (the subject) maintains a list of dependents (observers) and notifies them of state changes.
 
 Create a Subject class that manages observers:
@@ -162,4 +162,64 @@ Output:
 ```python
 Observer 1 received: Hello Observers!
 Observer 2 received: Hello Observers!
+```
+
+## Strategy Pattern
+
+### Python Object Oriented Programming Strategy Pattern
+
+* Lesson Body:
+The Strategy Pattern is a behavioral design pattern that enables selecting an algorithm's behavior at runtime. It defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+
+First, let's create an abstract strategy interface:
+```python
+from abc import ABC, abstractmethod
+
+class PaymentStrategy(ABC):
+    @abstractmethod
+    def pay(self, amount):
+        pass
+```
+Now, let's implement concrete strategies:
+```python
+class CreditCardPayment(PaymentStrategy):
+    def __init__(self, card_number, expiry_date, cvv):
+        self.card_number = card_number
+        self.expiry_date = expiry_date
+        self.cvv = cvv
+        
+    def pay(self, amount):
+        print(f"Paying ${amount} using Credit Card: {self.card_number}")
+        return True
+```
+Create another payment strategy:
+```python
+class PayPalPayment(PaymentStrategy):
+    def __init__(self, email, password):
+        self.email = email
+        self.password = password
+        
+    def pay(self, amount):
+        print(f"Paying ${amount} using PayPal account: {self.email}")
+        return True
+```
+Now, create a context class that will use these strategies:
+```python
+class ShoppingCart:
+    def __init__(self):
+        self.items = []
+        self.payment_strategy = None
+    
+    def add_item(self, item, price):
+        self.items.append({"item": item, "price": price})
+    
+    def set_payment_strategy(self, payment_strategy):
+        self.payment_strategy = payment_strategy
+    
+    def checkout(self):
+        total = sum(item["price"] for item in self.items)
+        if self.payment_strategy:
+            return self.payment_strategy.pay(total)
+        else:
+            raise ValueError("No payment strategy set")
 ```
