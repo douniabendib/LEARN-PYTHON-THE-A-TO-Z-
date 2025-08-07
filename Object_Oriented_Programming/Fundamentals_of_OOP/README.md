@@ -1,5 +1,33 @@
 # Object-Oriented Programming
 
+## External Files
+
+External files let you organize your classes in separate Python files and import them into your main program.
+
+Create a separate Python file called my_class.py
+```python
+class MyClass:
+    def __init__(self, name):
+        self.name = name
+    
+    def greet(self):
+        return f"Hello, I'm {self.name}"
+```
+Import the class into your main file
+```python
+from my_class import MyClass
+```
+Create an instance and use it
+```python
+obj = MyClass("Alice")
+print(obj.greet())
+```
+Output:
+```python
+Hello, I'm Alice
+```
+The from my_class import MyClass statement connects the my_class.py file to your program. The first my_class is the filename (without .py), and MyClass is the class name inside that file.
+
 ## Introduction to OOP
 
 Object-Oriented Programming (OOP) is a programming paradigm that organizes code around objects rather than functions and logic. In OOP, an object is a collection of data (attributes) and functions (methods) that operate on that data.
