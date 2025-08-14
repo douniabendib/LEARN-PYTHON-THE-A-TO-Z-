@@ -20,3 +20,9 @@ Object-Oriented Programming (OOP) is a programming paradigm centered around the 
 - Methods Can Return
 - Constructor Method (init)
 
+# Chapter2: Decorators
+- Introduction to Decorators
+- Property Decorator
+- Static Method Decorator
+- Class Method Decorator
+
