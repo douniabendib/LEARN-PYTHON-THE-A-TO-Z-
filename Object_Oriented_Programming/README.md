@@ -26,3 +26,8 @@ Object-Oriented Programming (OOP) is a programming paradigm centered around the 
 - Static Method Decorator
 - Class Method Decorator
 
+# Chapter3 : Class Properties
+- Instance vs Class Variables
+- Property Decorators
+- Private Attributes
+
