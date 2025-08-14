@@ -31,3 +31,10 @@ Object-Oriented Programming (OOP) is a programming paradigm centered around the 
 - Property Decorators
 - Private Attributes
 
+# Chapter4 : Inheritance
+- Basic Inheritance
+- The super() Function
+- Method Overriding
+- Multiple Inheritance
+- Method Resolution Order
+
