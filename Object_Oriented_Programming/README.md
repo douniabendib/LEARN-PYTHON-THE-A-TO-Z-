@@ -38,3 +38,9 @@ Object-Oriented Programming (OOP) is a programming paradigm centered around the 
 - Multiple Inheritance
 - Method Resolution Order
 
+# Chapter5 : Polymorphism
+- Method Overriding Revisited
+- Duck Typing
+- Abstract Classes and Methods
+- Interface Design
+
