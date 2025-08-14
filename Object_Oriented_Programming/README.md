@@ -44,3 +44,9 @@ Object-Oriented Programming (OOP) is a programming paradigm centered around the 
 - Abstract Classes and Methods
 - Interface Design
 
+# Chapter6 : Encapsulation
+- Public, Protected, Private Mem
+- Access Modifiers
+- Information Hiding
+- Property Decorators Advanced
+
