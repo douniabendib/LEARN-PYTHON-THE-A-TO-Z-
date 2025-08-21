@@ -174,4 +174,4 @@ The output will be:
 Entering the context
 Inside the context
 Exiting the context
-```python
+```
