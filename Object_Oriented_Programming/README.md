@@ -55,3 +55,10 @@ Object-Oriented Programming (OOP) is a programming paradigm centered around the 
 - Operator Overloading
 - Container Magic Methods
 
+# Chapter8 : Advanced OOP Concepts
+- Composition vs Inheritance
+- Mixins
+- Static and Class Methods
+- Class Decorators
+- Context Managers
+
