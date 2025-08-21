@@ -66,9 +66,16 @@ Object-Oriented Programming (OOP) is a programming paradigm centered around the 
 - The *args
 - The **kwargs
 
-# Chapter 10: Design Patterns
+# Chapter10: Design Patterns
 - Singleton Pattern
 - Factory Pattern
 - Observer Pattern
 - Strategy Pattern
 
+# Chapter11 : Design Patterns2
+- Command Pattern
+- Adapter Pattern
+- Decorator Pattern
+- Template Method Pattern
+- State Pattern
+- Composite Pattern
